@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.5.2": {
+    ".NETFramework,Version=v4.8": {
       "NUnit/3.8.1": {
         "type": "package",
         "compile": {
@@ -72,7 +72,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.2/win": {
+    ".NETFramework,Version=v4.8/win": {
       "NUnit/3.8.1": {
         "type": "package",
         "compile": {
@@ -143,7 +143,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.2/win-x64": {
+    ".NETFramework,Version=v4.8/win-x64": {
       "NUnit/3.8.1": {
         "type": "package",
         "compile": {
@@ -214,7 +214,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.2/win-x86": {
+    ".NETFramework,Version=v4.8/win-x86": {
       "NUnit/3.8.1": {
         "type": "package",
         "compile": {
@@ -394,7 +394,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.5.2": [
+    ".NETFramework,Version=v4.8": [
       "NUnit >= 3.8.1",
       "NUnit3TestAdapter >= 3.8.0",
       "Selenium.RC >= 3.1.0",
@@ -403,37 +403,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DellUser\\.nuget\\packages\\": {}
+    "C:\\Users\\vipna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ML-Script\\NUnit-Selenium-Sample-master\\NUnit-Selenium-Sample-master\\NUnitSelenium\\NUnitSelenium.csproj",
-      "projectName": "NUnitSelenium",
-      "projectPath": "D:\\ML-Script\\NUnit-Selenium-Sample-master\\NUnit-Selenium-Sample-master\\NUnitSelenium\\NUnitSelenium.csproj",
-      "packagesPath": "C:\\Users\\DellUser\\.nuget\\packages\\",
-      "outputPath": "D:\\ML-Script\\NUnit-Selenium-Sample-master\\NUnit-Selenium-Sample-master\\NUnitSelenium\\obj\\",
+      "projectUniqueName": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj",
+      "projectName": "ParallelSelenium",
+      "projectPath": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj",
+      "packagesPath": "C:\\Users\\vipna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\DellUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vipna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net452"
+        "net48"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net452": {
+        "net48": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net452": {
+      "net48": {
         "dependencies": {
           "NUnit": {
             "target": "Package",

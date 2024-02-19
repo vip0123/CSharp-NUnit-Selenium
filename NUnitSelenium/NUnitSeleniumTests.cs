@@ -7,45 +7,41 @@ using System.Collections.Generic;
 
 namespace NUnitSelenium
 {
-    [TestFixture("chrome", "60", "Windows 10")]
-    [TestFixture("internet explorer", "11", "Windows 7")]
-    [TestFixture("firefox", "60", "Windows 7")]
-    [TestFixture("chrome", "71", "Windows 7")]
-    [TestFixture("internet explorer", "11", "Windows 10")]
-    [TestFixture("firefox", "58", "Windows 7")]
-    [TestFixture("chrome", "67", "Windows 7")]
-    [TestFixture("internet explorer", "10", "Windows 7")]
-    [TestFixture("firefox", "55", "Windows 7")]
+    [TestFixture("Chrome", "92.0", "Windows 10", "1920x1080")]
+    [TestFixture("MicrosoftEdge", "103.0", "Windows 10", "1920x1080")]
     [Parallelizable(ParallelScope.Children)]
     public class NUnitSeleniumSample
     {
-        public static string LT_USERNAME = Environment.GetEnvironmentVariable("LT_USERNAME") ==null ? "your username" : Environment.GetEnvironmentVariable("LT_USERNAME");
-        public static string LT_ACCESS_KEY = Environment.GetEnvironmentVariable("LT_ACCESS_KEY") == null ? "your accessKey" : Environment.GetEnvironmentVariable("LT_ACCESS_KEY");
-        public static bool tunnel = Boolean.Parse(Environment.GetEnvironmentVariable("LT_TUNNEL")== null ? "false" : Environment.GetEnvironmentVariable("LT_TUNNEL"));       
+        public static string LT_USERNAME = "vip0123";
+        public static string LT_ACCESS_KEY = "3ayiYrouNUDmkP7pJxYVy6MaQ1NEogBUZ2noN8LUe9QDqhH3ul";
+        public static bool tunnel = Boolean.Parse(Environment.GetEnvironmentVariable("LT_TUNNEL") == null ? "false" : Environment.GetEnvironmentVariable("LT_TUNNEL"));
         public static string build = Environment.GetEnvironmentVariable("LT_BUILD") == null ? "your build name" : Environment.GetEnvironmentVariable("LT_BUILD");
-        public static string seleniumUri = "https://hub.lambdatest.com:443/wd/hub";
+        public static string seleniumUri = "https://hub.lambdatest.com/wd/hub";
 
 
         ThreadLocal<IWebDriver> driver = new ThreadLocal<IWebDriver>();
         private String browser;
         private String version;
         private String os;
+        private String resolution;
 
-        public NUnitSeleniumSample(String browser, String version, String os)
+        public NUnitSeleniumSample(String browser, String version, String os, String resolution)
         {
             this.browser = browser;
             this.version = version;
             this.os = os;
+            this.resolution = resolution;
         }
 
         [SetUp]
         public void Init()
         {
-            
+
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.SetCapability(CapabilityType.BrowserName, browser);
-            capabilities.SetCapability(CapabilityType.Version, version);
-            capabilities.SetCapability(CapabilityType.Platform, os);
+            capabilities.SetCapability("browserName", browser);
+            capabilities.SetCapability("version", version);
+            capabilities.SetCapability("platform", os);
+            capabilities.SetCapability("resolution", resolution);
 
             //Requires a named tunnel.
             if (tunnel)
@@ -56,7 +52,7 @@ namespace NUnitSelenium
             {
                 capabilities.SetCapability("build", build);
             }
-          
+
             capabilities.SetCapability("user", LT_USERNAME);
             capabilities.SetCapability("accessKey", LT_ACCESS_KEY);
 
@@ -69,7 +65,7 @@ namespace NUnitSelenium
         }
 
         [Test]
-       public void Todotest()
+        public void Todotest()
         {
             {
                 Console.WriteLine("Navigating to todos app.");
@@ -108,7 +104,7 @@ namespace NUnitSelenium
             }
             finally
             {
-                
+
                 // Terminates the remote webdriver session
                 driver.Value.Quit();
             }

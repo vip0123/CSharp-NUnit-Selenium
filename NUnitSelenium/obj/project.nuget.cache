@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "h+NAuvL0lfZHBrOCfdAvbVOgyWS0OlNws9qqEeggV2pV6EjC3tpJiCJKcYp9ECIhJYHHsqe/Zq6/yQdBf5Ecaw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vipna\\.nuget\\packages\\nunit\\3.8.1\\nunit.3.8.1.nupkg.sha512",
+    "C:\\Users\\vipna\\.nuget\\packages\\nunit3testadapter\\3.8.0\\nunit3testadapter.3.8.0.nupkg.sha512",
+    "C:\\Users\\vipna\\.nuget\\packages\\selenium.rc\\3.1.0\\selenium.rc.3.1.0.nupkg.sha512",
+    "C:\\Users\\vipna\\.nuget\\packages\\selenium.support\\3.5.2\\selenium.support.3.5.2.nupkg.sha512",
+    "C:\\Users\\vipna\\.nuget\\packages\\selenium.webdriver\\3.5.2\\selenium.webdriver.3.5.2.nupkg.sha512",
+    "C:\\Users\\vipna\\.nuget\\packages\\selenium.webdriverbackedselenium\\3.5.2\\selenium.webdriverbackedselenium.3.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

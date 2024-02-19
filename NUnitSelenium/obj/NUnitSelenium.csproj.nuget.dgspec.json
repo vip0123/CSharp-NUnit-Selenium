@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj",
+        "projectName": "ParallelSelenium",
+        "projectPath": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\NUnitSelenium.csproj",
+        "packagesPath": "C:\\Users\\vipna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vipna\\source\\repos\\CSharp-NUnit-Selenium\\NUnitSelenium\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\vipna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.8.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Selenium.RC": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
+            "Selenium.WebDriverBackedSelenium": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
